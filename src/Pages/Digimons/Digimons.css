@@ -1,0 +1,49 @@
+.digimon-section {
+  width: 100%;
+  padding: var(--padding-l);
+  text-align: center;
+}
+
+.digimons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-l);
+  padding: var(--padding-l);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-m);
+  border: 3px solid var(--bg-main);
+  background-color: var(--bg-card);
+  border-radius: 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card > img {
+  width: 90%;
+}
+
+@media screen and (max-width: 735px) {
+  .digimons {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 150px));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .digimons {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 120px));
+    gap: var(--gap-m);
+  }
+}

@@ -1,0 +1,23 @@
+button {
+  border: var(--bg-main);
+  border-radius: var(--border-radius);
+  padding: var(--padding-s) var(--padding-m);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.principal {
+  background-color: var(--bg-main);
+  color: var(--text-regular);
+}
+
+.secondary {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 2px solid var(--bg-main);
+}
+button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  filter: brightness(1.2);
+}
